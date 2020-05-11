@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 interface ContainerProps {
   size?: 'small' | 'large';
@@ -32,5 +33,11 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+  }
+`;
+
+export const Nav = styled(NavLink)`
+  &.active {
+    border-bottom: solid 3px #ff872c;
   }
 `;
